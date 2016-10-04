@@ -1,25 +1,24 @@
-## Užduotis
+## **Tikslas - susipažinti su:** 
 
-**Tikslas - sugalvoti užduoties temą ir aprašyti užduoties sąvybes.**
+<ol type="a">
+    <li>elgsena paremto programavimo principais</li>
+    <li>moduliniu (angl. "unit") testavimu</li>
+    <li>RSpec testavimo karkasu</li>
+    <li>Ruby progravimo kalba</li>
+</ol>
 
-**Užduotis:**
+#### **Užduotis:**
 
-1. Sugalvoti užduoties temą (negali kartotis su šio semestro jau užregistruotomis temomis https://github.com/sauliusgrigaitis/agile_development_with_ruby/tree/master/tasks/temos)
+1. Identifikuoti esminę esybę (pvz. bankinėje sistemoje tai būtų Sąskaita); 
+2. Įgyvendinti esminės esybės funkcionalumą BDD principu parašant bent 10 testų, kurie testuoja būtent tą dalykinę sritį. Pvz. puikiai tinka testas, kuris bankinėje sistemoje testuoja ar korektiškai nukeliauja pinigai gavėjui, kai siuntėjas atlieka pavedimą. Bet visiškai netinka toks testas, kuris testuoja kokio tipo objektas susikūrė iškvietus 'initialize' metodą, nes tai visiškai neparodo ar sistema veikia korektiškai ar ne.
 
-2. Sugalvoti bent 30 sistemos savybių iš sistemos naudotojų pusės ( pavyzdys http://github.com/sauliusgrigaitis/bank/blob/master/uzduotys/savybes ). Kuo daugiau sugalvosite, tuo geriau, nes nebūtina visų įgyvendinti, svarbu įgyvendinti svarbiausias.
+#### **Reikalavimai:**
+1. Visas kodas turi būti 100% padengtas testais.
+2. Reikia panaudoti SimpleCov įrankį ir pademonstruoti kodo padengimą testais.
+3. Reikia panaudoti RuboCop įrankį ir pademonstruoti kodo atitikimą "Ruby Style Guide". Reikia naudoti standartinę RuboCop konfigūraciją.
+4. Reikia panaudoti Reek įrankį ir pademonstruoti, kad kodas neturi tipinių simptomų. Reikia naudoti standartinę Reek konfigūraciją.
+5. Jeigu įgyvendinant esminės klasės funkcionalumą prireikia kitų klasių, tai jas taip pat reikia parašyti panaudojant BDD.
+6. Negalima naudoti Rails, ActiveRecord ar kokio nors kito karkaso atliekant šią užduotį. T.y. užduotis turi daugiau demonstruoti gebėjimą programuoti Ruby, o ne naudojimąsi kokiu nors karkasu.
+7. Testai turi būti parašyti laikantis **http://betterspecs.org** rekomendacijų. 
 
-3. Surušiuoti sistemos savybes pagal jų svarbą, t.y. pirmos savybės bus tos, kurios teikia didžiausią naudą vartotojui. 
-
-4. Susigrupuoti į komandas iš 1-2 žmonių.
-
-5. 1, 2, 3 ir 4 punktai užregistruoti el. paštu saulius at necolt taškas com būtinai nurodant studento pažymėjimo numerį.
-
-**Reikalavimai:**
-
-1. Užduoties tema turi būti pakankamos apimties, minimalus reikalavimas yra 5 esminės esybės (ne sąvybės). Pvz. jei kuriama bankinė sistema, tai esminės esybės būtų: Sąskaita, Vartotojas, Tranzakcija, Valiuta, PalūkanųNorma.
-
-2. Negalima kurti tokios sistemos, kuri teorinių paskaitų metu buvo naudojama demonstracijoms.
-
-3. Pačios kuriamos sistemos taip pat turi būti unikalios, t.y. pakeitus vienos sistemos esybių pavadinimus gauta sistema nebus skaitoma kaip unikali.
- 
-**Įvertinimas: 0.5 balo**
+**Įvertinimas: 1 balas**   
