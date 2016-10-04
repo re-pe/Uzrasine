@@ -7,7 +7,7 @@ require './notebase_spec'
 require './note_spec'
 require './notebook_spec'
 require './notetainer'
-require 'base64'
+#require 'base64'
 
 notetainer = Notetainer.new
 describe 'notetainer#create_notebook' do

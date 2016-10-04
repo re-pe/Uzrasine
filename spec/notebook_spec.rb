@@ -18,44 +18,7 @@ describe 'Notebook#initialize' do
     end
   end
 end
-=begin  
-describe 'Notebook.create' do
-  notebook = Notebook.create('bcde')
-  context 'when new notebook is created' do
-    it 'it\'s name is "bcde"' do
-      expect(notebook.name).to be == 'bcde' 
-    end
-    it 'it\'s id is ' + Base64.encode64('bcde') do
-      expect(notebook.id).to be == Base64.encode64('bcde') 
-    end
-    it 'Notebook.instances have key ' + Base64.encode64('bcde') do
-      expect(Notebook.instances).to have_key(Base64.encode64('bcde')) 
-    end
-  end
-end
 
-describe 'Notebook.notebook?' do
-  notebook = Notebook.create('bcde')
-  context 'when notebook exists' do
-    it '.notebook?("bcde") returns true' do
-      expect(Notebook.notebook?('bcde')).to be == true 
-    end
-    it '.notebook?("cdef") returns true' do
-      expect(Notebook.notebook?('cdef')).to be == false 
-    end
-  end
-end
-
-describe 'Notebook.delete' do
-  notebook = Notebook.create('defi')
-  Notebook.delete('defi')
-  context 'when notebook is deleted' do
-    it '.notebook?("defi") returns false' do
-      expect(Notebook.notebook?('defi')).to be == false 
-    end
-  end
-end
-=end
 describe 'Notebook' do
   describe '#create_note' do
     context 'when note is created,' do
