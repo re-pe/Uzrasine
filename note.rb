@@ -9,6 +9,6 @@ class Note < Notebase
     self.name = name
     @notebook = notebook
     @author = author
-    self.description = description
+    @description = description
   end
 end

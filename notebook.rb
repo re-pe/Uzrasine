@@ -6,31 +6,7 @@ require './note'
 # This is notebook class
 class Notebook < Notebase
   attr_reader :notes
-=begin
-  @@instances = Hash.new { nil }
 
-  def self.instances
-    @@instances
-  end
-
-  def self.create(name, owner = '', description = '')
-    notebook = Notebook.new(name, owner, description)
-    @@instances[notebook.id] = notebook
-    notebook
-  end
-
-  def self.delete(name)
-    key = Notebook.encode(name)
-    return nil if @@instances[key].nil?
-    @@instances.delete(key)
-    name
-  end
-
-  def self.notebook?(arg)
-    key = Notebook.encode(arg)
-    !@@instances[key].nil?
-  end
-=end
   def initialize(name, owner = '', description = '')
     self.name = name
     @notes = Hash.new { nil }
@@ -46,12 +22,12 @@ class Notebook < Notebase
 
   def delete_note(name)
     key = Notebook.encode(name)
-    notes.delete(key) unless notes[key].nil?
+    notes.delete(key) unless notes.key?(name)
     name
   end
 
   def note?(name)
     key = Note.encode(name)
-    !notes[key].nil?
+    notes.key?(key)
   end
 end

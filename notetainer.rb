@@ -5,7 +5,7 @@ require './notebook'
 # This is container class
 class Notetainer < Notebase
   attr_reader :notebooks
-  
+
   def initialize
     @notebooks = Hash.new { nil }
   end

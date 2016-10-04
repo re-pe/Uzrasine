@@ -4,8 +4,7 @@ require 'base64'
 
 # This is base class
 class Notebase
-  attr_reader :id
-  attr_accessor :description
+  attr_reader :id, :description
 
   def self.encode(arg)
     Base64.encode64(arg)
@@ -21,5 +20,8 @@ class Notebase
 
   def name=(arg)
     @id = Notebase.encode(arg)
+  end
+  def description=(new_descr)
+    @description = new_descr unless new_descr.empty?
   end
 end

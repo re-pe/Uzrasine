@@ -57,27 +57,17 @@ describe 'Notebook.delete' do
 end
 =end
 describe 'Notebook' do
-  notebook = Notebook.new('efij')
   describe '#create_note' do
-    context 'when note is created' do
+    context 'when note is created,' do
+      notebook = Notebook.new('efij')
       it 'key ' + Notebook.encode('My note') + ' must be in @notes' do
         note = notebook.create_note('My note')
         expect(notebook.notes[Notebook.encode('My note')]).to be == note
       end
-    end
-  end
-  
-  describe '#note?' do
-    context 'when note is created' do
-      it '.notes? must be true' do
+      it 'note? "My note" must be true' do
         expect(notebook.note?('My note')).to be == true
       end
-    end
-  end
-
-  describe '#delete_note' do
-    context 'when note is deleted' do
-      it '.notes? must be false' do
+      it 'note? "My note" must be false' do
         name = notebook.delete_note('My note')
         expect(notebook.note?('My note')).to be == false
         expect(name).to be == 'My note'
