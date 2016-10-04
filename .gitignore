@@ -2,7 +2,6 @@
 /doc
 /coverage
 *.log
-*.lnk
 .dub
 docs.json
 __dummy.html
