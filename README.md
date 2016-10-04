@@ -2,22 +2,12 @@
 
 ### Užduotys:
 
-#### 1-oji užduotis
+#### 1-oji užduotis: [Aprašymas](TODO-1.md)
 
-[Aprašymas](TODO-1.md)
+#### 2-oji užduotis: [Aprašymas](TODO-2.md)
 
-#### 2-oji užduotis
+#### 3-oji užduotis: [Aprašymas](TODO-3.md)
 
-[Aprašymas](TODO-2.md)
+#### 4-oji užduotis: [Aprašymas](TODO-4.md)
 
-#### 3-oji užduotis
-
-[Aprašymas](TODO-3.md)
-
-#### 4-oji užduotis
-
-[Aprašymas](TODO-4.md)
-
-#### 5-oji užduotis
-
-[Aprašymas](TODO-5.md)
+#### 5-oji užduotis: [Aprašymas](TODO-5.md)
