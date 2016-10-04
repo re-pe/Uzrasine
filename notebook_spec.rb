@@ -18,7 +18,7 @@ describe 'Notebook#initialize' do
     end
   end
 end
-  
+=begin  
 describe 'Notebook.create' do
   notebook = Notebook.create('bcde')
   context 'when new notebook is created' do
@@ -55,9 +55,9 @@ describe 'Notebook.delete' do
     end
   end
 end
-
+=end
 describe 'Notebook' do
-  notebook = Notebook.create('efij')
+  notebook = Notebook.new('efij')
   describe '#create_note' do
     context 'when note is created' do
       it 'key ' + Notebook.encode('My note') + ' must be in @notes' do
