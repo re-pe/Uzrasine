@@ -1,4 +1,6 @@
-## **Tikslas - susipažinti su:** 
+## **2-oji užduotis**
+
+#### **Tikslas - susipažinti su:** 
 
 <ol type="a">
     <li>elgsena paremto programavimo principais</li>
@@ -15,10 +17,9 @@
 #### **Reikalavimai:**
 1. Visas kodas turi būti 100% padengtas testais.
 2. Reikia panaudoti SimpleCov įrankį ir pademonstruoti kodo padengimą testais.
-3. Reikia panaudoti RuboCop įrankį ir pademonstruoti kodo atitikimą "Ruby Style Guide". Reikia naudoti standartinę RuboCop konfigūraciją.
+3. Reikia panaudoti RuboCop įrankį kartu su [rubocop-rspec](https://github.com/backus/rubocop-rspec) ir pademonstruoti kodo atitikimą "Ruby Style Guide". Reikia naudoti standartinę RuboCop konfigūraciją.
 4. Reikia panaudoti Reek įrankį ir pademonstruoti, kad kodas neturi tipinių simptomų. Reikia naudoti standartinę Reek konfigūraciją.
 5. Jeigu įgyvendinant esminės klasės funkcionalumą prireikia kitų klasių, tai jas taip pat reikia parašyti panaudojant BDD.
 6. Negalima naudoti Rails, ActiveRecord ar kokio nors kito karkaso atliekant šią užduotį. T.y. užduotis turi daugiau demonstruoti gebėjimą programuoti Ruby, o ne naudojimąsi kokiu nors karkasu.
-7. Testai turi būti parašyti laikantis **http://betterspecs.org** rekomendacijų. 
 
 **Įvertinimas: 1 balas**   
