@@ -1,0 +1,32 @@
+##**3-ioji užduotis
+
+####**Tikslas - įsisavinti:**
+  (a) elgsena paremto programavimo principus
+  (b) modulinį (angl. "unit") testavimą
+  (c) RSpec testavimo karkasą
+  (d) Ruby progravimo kalbą
+
+Užduotis:
+  1) Įgyvendint dalį sistemos funkcionalumo pratęsiant antros užduoties darbą.
+
+Reikalavimai:
+  1) Kodas turi būti rašomas panaudojant OOP principus, Ruby idiomas (pvz. iteratoriai vietoj ciklų), Ruby vardų taisykles, dviejų tarpų (angl. "space") symbolių indentaciją ir pan.
+  2) Testų rinkinį turi sudaryti bent 30 testų. Visi jie turi būti skirti tai konkrečiai dalykinei sričiai, kuriai kuriama sistema. Tai nereiškia, kad kodas, kuris yra nepriklausomas nuo dalykinės srities gali būti netestuotas. Pvz. puikiai tinka testas, kuris bankinėje sistemoje testuoja ar korektiškai nukeliauja pinigai gavėjui, kai siuntėjas atlieka pavedimą. Bet visiškai netinka toks testas, kuris testuoja kokio tipo objektas susikūrė iškvietus 'initialize' metodą, nes tai visiškai neparodo ar sistema veikia korektiškai ar ne.
+  3) Turi būti tikslingai (t.y. ten kur jų tikrai reikia) panaudoti bent 5 standartiniai palygintojai (angl. "matcher"). Sąrašas https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers.
+  4) Turi būti sukurti ir tikslingai panaudoti bent du savi palygintojai ( https://www.relishapp.com/rspec/rspec-expectations/v/3-1/docs/custom-matchers )
+  5) Esybės aprašomos klasėmis, kiekviena klasė atskirame faile.
+  6) Esybes aprašančios klasės ir testai turi būti parašyti taikant elgsena paremtą programavimą.
+  7) Esybes aprašančios klasės turi būti 100% padengtos testais (jei padengimas yra mažesnis - jis turi būti motyvuotas). Padengimui patikrinti naudojamas SimpleCov. 
+  8) Reikia panaudoti RuboCop įrankį kartu su [rubocop-rspec](https://github.com/backus/rubocop-rspec) ir pademonstruoti kodo atitikimą "Ruby Style Guide". Reikia naudoti standartinę RuboCop konfigūraciją.
+  9) Reikia panaudoti Reek įrankį ir pademonstruoti, kad kodas neturi tipinių simptomų. Reikia naudoti standartinę Reek konfigūraciją.
+  10) Vartotojo sąsaja turi būti aiškiai izoliuota nuo esybes aprašančių klasių. Vartotojo sąsasaja gali būti tiek komandinės eilutės, tiek ir grafinė. Vartotojo sąsaja nebūtinai turi būti programuojama taikant elgsena paremtą programavimą.
+  11) Negalima naudoti Rails, ActiveRecord ar kokio nors kito karkaso atliekant šią užduotį. T.y. užduotis turi daugiau demonstruoti gebėjimą programuoti Ruby, o ne naudojimąsi kokiu nors karkasu.
+  12) Programa turi išsaugoti būseną ir ją atstatyti (pvz panaudojant YAML failus)
+  13) Pasirinktu būdų turi būti parodoma, kad programa ir testai buvo rašomi žingsnis po žingsnio ( rekomenduoju Git versijų kontrolės sistemą)
+
+
+   
+Pastabos:
+Visi reikalavimai turi būti išpildyti prasmingai, o ne tik tam, kad patenkinti formalų reikalavimą.
+
+Įvertinimas: 1.5 balo
