@@ -1,24 +1,90 @@
-## **Tikslas - susipažinti su:** 
+## 1 užduotis
 
-<ol type="a">
-    <li>elgsena paremto programavimo principais</li>
-    <li>moduliniu (angl. "unit") testavimu</li>
-    <li>RSpec testavimo karkasu</li>
-    <li>Ruby progravimo kalba</li>
-</ol>
+### Tema: Daugiavartotojiška užrašinė (Multiuser notes manager)
 
-#### **Užduotis:**
+**Pagrindinės esybės:**
 
-1. Identifikuoti esminę esybę (pvz. bankinėje sistemoje tai būtų Sąskaita); 
-2. Įgyvendinti esminės esybės funkcionalumą BDD principu parašant bent 10 testų, kurie testuoja būtent tą dalykinę sritį. Pvz. puikiai tinka testas, kuris bankinėje sistemoje testuoja ar korektiškai nukeliauja pinigai gavėjui, kai siuntėjas atlieka pavedimą. Bet visiškai netinka toks testas, kuris testuoja kokio tipo objektas susikūrė iškvietus 'initialize' metodą, nes tai visiškai neparodo ar sistema veikia korektiškai ar ne.
+* Vartotojas, 
+* Administratorius
+* Užrašų knygelė, 
+* Įrašas / žyma / komentaras, 
+* Prisegtas failas
 
-#### **Reikalavimai:**
-1. Visas kodas turi būti 100% padengtas testais.
-2. Reikia panaudoti SimpleCov įrankį ir pademonstruoti kodo padengimą testais.
-3. Reikia panaudoti RuboCop įrankį ir pademonstruoti kodo atitikimą "Ruby Style Guide". Reikia naudoti standartinę RuboCop konfigūraciją.
-4. Reikia panaudoti Reek įrankį ir pademonstruoti, kad kodas neturi tipinių simptomų. Reikia naudoti standartinę Reek konfigūraciją.
-5. Jeigu įgyvendinant esminės klasės funkcionalumą prireikia kitų klasių, tai jas taip pat reikia parašyti panaudojant BDD.
-6. Negalima naudoti Rails, ActiveRecord ar kokio nors kito karkaso atliekant šią užduotį. T.y. užduotis turi daugiau demonstruoti gebėjimą programuoti Ruby, o ne naudojimąsi kokiu nors karkasu.
-7. Testai turi būti parašyti laikantis **http://betterspecs.org** rekomendacijų. 
+**Vartotojas:**
 
-**Įvertinimas: 1 balas**   
+* gali sukurti savo paskyrą
+* gali prisijungti prie sistemos
+* gali sukurti savo užrašų knygeles
+* savo užrašų knygelėse gali: 
+    * kurti, redaguoti ir trinti jų įrašus
+    * kurti įrašų komentarus, juos redaguoti, trinti
+    * įkelti, tvarkyti ir trinti failus savo užrašų knygelėse
+* gali ieškoti reikalingų įrašų pagal pavadinimą, žymas, aprašo ar komentarų tekstą
+* gali kitam vartotojui leisti:
+    * skaityti savo knygelių įrašus 
+    * kurti ir redaguoti savo užrašų knygelės įrašus 
+    * komentuoti savo užrašų knygelės įrašus 
+    * įkelti, tvarkyti ir trinti failus savo užrašų knygelėse
+* gali atimti kitam vartotojui suteiktus leidimus
+* gali perleisti savo užrašų knygelę kitam vartotojui
+* gali ištrinti savo užrašų knygelę
+* gali matyti savo užrašų knygelių sąrašą 
+* gali matyti sąrašą vartotojų, galinčių skaityti jo užrašų knygeles
+* gali matyti sąrašą vartotojų, galinčių rašyti jo užrašų knygelese
+* gali matyti sąrašą vartotojų, galinčių komentuoti jo knygelės įrašus
+* gali parašyti tiesioginę žinutę kitam vartotojui
+* gali gauti leidimą iš kitų vartotojų 
+    * skaityti jų užrašų knygeles
+    * kurti ir redaguoti įrašus jų užrašų knygelese
+    * komentuoti įrašus jų užrašų knygelese
+    * įkelti, tvarkyti ir trinti failus jų užrašų knygelėse
+* gali išeiti iš sistemos
+* gali pasikeisti slaptažodį
+* gali redaguoti savo paskyrą
+* gali ištrinti savo paskyrą
+* turi id
+* turi vardą, pavardę, lytį
+* turi kontaktinius duomenis: el. paštą, tel. nr., adresą
+
+**Administratorius:**
+
+* gali matyti vartotojų sąrašą
+* gali užblokuoti vartotojo paskyrą
+* gali ištrinti vartotojo paskyrą
+* gali pakeisti vartotojo slaptažodį
+* gali matyti vartotojo paskyros duomenis
+* gali matyti vartotojų užrašų knygelių sąrašą
+* gali matyti užrašų knygelių skaitytojus, autorius ir komentatorius
+* gali matyti vartotojų įkeltų failų sąrašą
+* gali matyti vartotojų veiksmų logą         
+
+**Užrašų knygelė:**
+
+* turi id
+* turi pavadinimą
+* turi kūrėją - pagrindinį skaitytoją ir autorių
+* gali turėti kitų skaitytojų
+* gali turėti kitų autorių
+* gali turėti kitų komentatorių
+
+**Įrašas / žyma / komentaras:**
+
+* turi id
+* turi pavadinimą
+* turi autorių
+* nurodo užrašų knygelę, kuriai priklauso
+* gali turėti aprašą
+* gali turėti komentarų
+* gali turėti prisegtų failų
+* yra šakninis, kai neturi pagrindinės žymos (tag)
+* gali turėti nuorodų į kitas žymas (tags)
+* gali turėti kitų įrašų nuorodas aprašo tekste
+
+**Prisegtas failas**
+
+* turi id
+* turi trumpą pavadinimą
+* turi kelią ir failo pavadinimą
+* turi tipą (paveikslėlis, garsas ir pan.)
+* nurodo įrašą, kuriam priklauso
+* nurodo jį įkėlusį vartotoją
