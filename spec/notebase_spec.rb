@@ -29,13 +29,13 @@ describe 'Notebase#name' do
     end
   end
 end
-
+cls
 describe 'Notebase#description' do
   notebase = Notebase.new
   notebase.description = 'New description'
   context 'when name is assigned' do
     it 'description has value' do
-      expect(notebase.description ).to be == 'New description'
+      expect(notebase.description).to be == 'New description'
     end
   end
 end
