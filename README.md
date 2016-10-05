@@ -1,4 +1,5 @@
 ## Judrusis programavimas Ruby
+Agile programming with Ruby
 
 ### Užduotys:
 
