@@ -1,6 +1,6 @@
 /.project
 /doc
-/coverage
+*/coverage
 *.log
 .dub
 docs.json
