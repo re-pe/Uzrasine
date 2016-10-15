@@ -1,9 +1,9 @@
-# notetainer.rb
+# notemanager.rb
 
 require './notebook'
 
 # This is container class
-class Notetainer < Notebase
+class Notemanager < Notebase
   attr_reader :notebooks
 
   def initialize

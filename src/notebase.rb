@@ -21,6 +21,7 @@ class Notebase
   def name=(arg)
     @id = Notebase.encode(arg)
   end
+
   def description=(new_descr)
     @description = new_descr unless new_descr.empty?
   end

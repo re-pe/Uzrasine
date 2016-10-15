@@ -3,8 +3,8 @@
 require 'simplecov'
 SimpleCov.start
 
-require './note_spec'
-require './notebook'
+require_relative './note_spec'
+require_relative '../notebook'
 require 'base64'
 
 describe 'Notebook#initialize' do

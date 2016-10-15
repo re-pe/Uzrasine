@@ -29,7 +29,7 @@ describe 'Notebase#name' do
     end
   end
 end
-cls
+
 describe 'Notebase#description' do
   notebase = Notebase.new
   notebase.description = 'New description'

@@ -3,7 +3,7 @@
 require 'simplecov'
 SimpleCov.start
 
-require './note'
+require_relative '../note'
 
 describe 'Note:' do
   note = Note.new('My first note', '', '')
