@@ -1,0 +1,8 @@
+inherit_from:
+  - C:/Tools/Ruby/.gem/gems/rubocop-0.43.0/config/default.yml
+  
+AllCops:
+  Exclude:
+  - src/test/**/*
+  
+require: rubocop-rspec 
