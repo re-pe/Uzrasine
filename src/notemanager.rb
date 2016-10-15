@@ -1,6 +1,6 @@
 # notemanager.rb
 
-require './notebook'
+require_relative 'notebook'
 
 # This is container class
 class Notemanager < Notebase

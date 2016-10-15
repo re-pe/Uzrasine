@@ -1,5 +1,6 @@
 # note.rb
-require './notebase'
+
+require_relative 'notebase'
 
 # This is note class
 class Note < Notebase

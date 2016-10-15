@@ -3,9 +3,9 @@
 require 'simplecov'
 SimpleCov.start
 
-require_relative './notebase_spec'
-require_relative './note_spec'
-require_relative './notebook_spec'
+require_relative 'notebase_spec'
+require_relative 'note_spec'
+require_relative 'notebook_spec'
 require_relative '../notemanager'
 #require 'base64'
 
