@@ -19,7 +19,7 @@
   7. Kodas turi būti 100% padengtas testais (jei padengimas yra mažesnis - jis turi būti motyvuotas). Padengimui patikrinti naudojamas SimpleCov. 
   8. Reikia panaudoti RuboCop įrankį kartu su [rubocop-rspec](https://github.com/backus/rubocop-rspec) ir pademonstruoti kodo atitikimą "Ruby Style Guide". Reikia naudoti standartinę RuboCop konfigūraciją.
   9. Reikia panaudoti Reek įrankį ir pademonstruoti, kad kodas neturi tipinių simptomų. Reikia naudoti standartinę Reek konfigūraciją.
- 10. Reikia pademonstruoti aukštą testų kokybę Mutant įrankio pagalba.
+  10. Reikia pademonstruoti aukštą testų kokybę Mutant įrankio pagalba.
   
 **Pastabos:**
 
