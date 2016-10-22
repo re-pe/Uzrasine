@@ -1,5 +1,5 @@
 inherit_from:
-  - C:/Tools/Ruby/.gem/gems/rubocop-0.43.0/config/default.yml
+  - C:/Tools/Ruby/.gem/gems/rubocop-0.44.1/config/default.yml
   
 AllCops:
   Exclude:
