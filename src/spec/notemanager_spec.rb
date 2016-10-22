@@ -48,6 +48,7 @@ describe Notemanager do
       expect(notebook.name).to be == 'fijk'
     end
   end
+
   context 'when notebook is selected' do
     notemanager.create_notebook('efij')
     notemanager.create_notebook('fijk')
