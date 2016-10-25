@@ -1,19 +1,69 @@
-## 2 užduotis
+## 3 užduotis
 
 ### Tema: Daugiavartotojiška užrašinė (Multiuser notes manager)
 
-**Pagrindinės esybės:**
+###**Pagrindinės esybės:**
 
-* Vartotojas, 
-* Administratorius
+* Pagrindinė tvarkyklė (MainManager)
+* Paskyrų tvarkyklė (AccountManager)
+* Užrašų knygelių tvarkyklė (NotebookManager)
 * Užrašų knygelė, 
 * Įrašas / žyma / komentaras, 
-* Prisegtas failas
+* Prisegtas failas,
+* Vartotojas, 
+* Vaidmuo
 
+###**Pagrindinė tvarkyklė (MainManager)**
+
+* sukuria ir įkelia paskyrų tvarkyklę
+* sukuria ir įkelia knygelių tvarkyklę
+
+#### Pagrindinės tvarkyklės savybės:
+
+  @accmanager
+  @nbmanager
+  
+  #initialize
+
+###**Užrašų tvarkyklė (NoteManager)**
+
+* leidžia sukurti paskyrą
+* leidžia prisijungti prie sistemos (atidaro vartotoją)
+* vartotojo nurodymu:
+    * kuria jo užrašų knygeles
+    * atidaro jo užrašų knygeles
+    * uždaro jo užrašų knygeles
+    * trina jo užrašų knygeles
+
+####Užrašų tvarkyklės savybės:
+
+  @notebooks
+  @open_notebooks
+  @current_notebook
+  @accounts
+  create_notebook(name, owner = '', description = '')
+  delete_notebook(name)
+  exists?(name)
+  open_notebook(name)
+  close(name)
+  open?(name)
+  select_notebook(name)
+  current?(name)
+  current
+
+    
+**Užrašų knygelė:**
+
+* turi id
+* turi pavadinimą
+* turi kūrėją - pagrindinį skaitytoją ir autorių
+* gali turėti kitų skaitytojų
+* gali turėti kitų autorių
+* gali turėti kitų komentatorių
+
+    
 **Vartotojas:**
 
-* gali sukurti savo paskyrą
-* gali prisijungti prie sistemos
 * gali sukurti savo užrašų knygeles
 * savo užrašų knygelėse gali: 
     * kurti, redaguoti ir trinti jų įrašus
@@ -57,15 +107,6 @@
 * gali matyti užrašų knygelių skaitytojus, autorius ir komentatorius
 * gali matyti vartotojų įkeltų failų sąrašą
 * gali matyti vartotojų veiksmų logą         
-
-**Užrašų knygelė:**
-
-* turi id
-* turi pavadinimą
-* turi kūrėją - pagrindinį skaitytoją ir autorių
-* gali turėti kitų skaitytojų
-* gali turėti kitų autorių
-* gali turėti kitų komentatorių
 
 **Įrašas / žyma / komentaras:**
 
